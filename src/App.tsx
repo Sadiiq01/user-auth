@@ -1,12 +1,5 @@
-import ContactPage from "./compnents/ContactPage/ContactPage";
-
 const App = () => {
-  return (
-    <div>
-      {" "}
-      <ContactPage />{" "}
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
