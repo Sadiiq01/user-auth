@@ -1,10 +1,10 @@
-import HomePage from "./compnents/HomePage/HomePage";
+import AboutPage from "./compnents/AboutPage/AboutPage";
 
 const App = () => {
   return (
     <div>
       {" "}
-      <HomePage />{" "}
+      <AboutPage />{" "}
     </div>
   );
 };
