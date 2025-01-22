@@ -1,10 +1,10 @@
-import AboutPage from "./compnents/AboutPage/AboutPage";
+import ContactPage from "./compnents/ContactPage/ContactPage";
 
 const App = () => {
   return (
     <div>
       {" "}
-      <AboutPage />{" "}
+      <ContactPage />{" "}
     </div>
   );
 };
