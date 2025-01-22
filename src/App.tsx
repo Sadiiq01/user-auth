@@ -1,5 +1,12 @@
+import HomePage from "./compnents/HomePage/HomePage";
+
 const App = () => {
-  return <div> </div>;
+  return (
+    <div>
+      {" "}
+      <HomePage />{" "}
+    </div>
+  );
 };
 
 export default App;
