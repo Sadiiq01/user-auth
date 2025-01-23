@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useContext, useRef } from "react";
 import NameContext from "../context/context";
 import { useForm } from "react-hook-form";
+import { Navigate, useNavigate } from "react-router-dom";
 
 type FormValues = {
   name: string;
@@ -16,6 +17,8 @@ const LoginPage = () => {
   const { name, setName } = useContext(NameContext);
 
   const ref = useRef<HTMLInputElement>(null);
+
+  const navigate = useNavigate();
 
   if (name) {
     return <h1> you have alredy account</h1>;
@@ -61,6 +64,7 @@ const LoginPage = () => {
                 if (ref.current) {
                   setName(ref.current.value);
                 }
+                navigate("/admin");
               }}
             />
 
