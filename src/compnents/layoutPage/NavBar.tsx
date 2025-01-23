@@ -1,25 +1,34 @@
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar-light bg-light">
       <div>
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           User Auth
-        </a>
+        </Link>
       </div>
 
       <div className="nav-links">
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="">About us </a>
+            <Link to="/about">About us </Link>
           </li>
           <li>
-            <a href="">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
-          <button className="btn btn-primary">Login</button>
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
+            Login
+          </button>
         </ul>
       </div>
     </nav>

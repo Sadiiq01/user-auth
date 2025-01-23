@@ -6,7 +6,7 @@ const AboutPage = () => {
       className="d-flex flex-column text-center text-white bg-dark"
       style={{
         height: "100vh",
-        backgroundImage: "url('https://via.placeholder.com/1920x1080')",
+        // backgroundImage: "url('https://via.placeholder.com/1920x1080')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

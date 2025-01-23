@@ -1,11 +1,8 @@
-import LoginPage from "./compnents/loginPage/LoginPage";
+import { RouterProvider } from "react-router-dom";
+import router from "./compnents/routes/routes";
 
 const App = () => {
-  return (
-    <div>
-      <LoginPage />
-    </div>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 };
 
 export default App;
