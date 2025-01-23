@@ -21,7 +21,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   if (name) {
-    return <h1> you have alredy account</h1>;
+    return <h1> you have already Loging</h1>;
   } else
     return (
       <div
